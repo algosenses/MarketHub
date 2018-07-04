@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Hub\Adaptor.cpp" />
+    <ClCompile Include="..\..\Src\Hub\Cache_Local.cpp" />
+    <ClCompile Include="..\..\Src\Hub\Composer.cpp" />
+    <ClCompile Include="..\..\Src\Hub\Controller.cpp" />
+    <ClCompile Include="..\..\Src\Hub\ControllerImpl.cpp" />
+    <ClCompile Include="..\..\Src\Hub\csv_parser.cpp" />
+    <ClCompile Include="..\..\Src\Hub\DataSource_Csv.cpp" />
+    <ClCompile Include="..\..\Src\Hub\DataSource_MySql.cpp" />
+    <ClCompile Include="..\..\Src\Hub\EventHub.cpp" />
+    <ClCompile Include="..\..\Src\Hub\Logger.cpp" />
+    <ClCompile Include="..\..\Src\Hub\Cache_Redis.cpp" />
+    <ClCompile Include="..\..\Src\Hub\Runtime.cpp" />
+    <ClCompile Include="..\..\Src\Hub\Server.cpp" />
+    <ClCompile Include="..\..\Src\Hub\TinyCrypt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Hub\Adaptor.h" />
+    <ClInclude Include="..\..\Src\Hub\Cache_Local.h" />
+    <ClInclude Include="..\..\Src\Hub\Composer.h" />
+    <ClInclude Include="..\..\Src\Hub\ControllerImpl.h" />
+    <ClInclude Include="..\..\Src\Hub\csv_parser.hpp" />
+    <ClInclude Include="..\..\Src\Hub\DataSource_Csv.h" />
+    <ClInclude Include="..\..\Src\Hub\DataSource_MySql.h" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\blocking_wait_strategy.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\config.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\multi_threaded_claim_strategy.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\ring_buffer.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence_barrier.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence_barrier_group.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence_range.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\single_threaded_claim_strategy.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\spin_wait.hpp" />
+    <ClInclude Include="..\..\Src\Hub\disruptor\spin_wait_strategy.hpp" />
+    <ClInclude Include="..\..\Src\Hub\EventHub.h" />
+    <ClInclude Include="..\..\Src\Hub\EventListener.h" />
+    <ClInclude Include="..\..\Src\Hub\Export.h" />
+    <ClInclude Include="..\..\Src\Hub\Logger.h" />
+    <ClInclude Include="..\..\Src\Hub\MarketHub.h" />
+    <ClInclude Include="..\..\Src\Hub\Cache_Redis.h" />
+    <ClInclude Include="..\..\Src\Hub\Runtime.h" />
+    <ClInclude Include="..\..\Src\Hub\Server.h" />
+    <ClInclude Include="..\..\Src\Hub\TinyCrypt.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8700D7AE-E38E-4194-B0FE-544F3D8DB86A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MarketHub</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MARKETHUB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>X:\E\CodeBases\Cpp\rudeconfig-5.0.5\src;X:\E\Program Files %28x86%29\MySQL\MySQL Connector C 6.1\include;x:\E\CodeBases\database\redis-win-3.0\redis-3.0\deps\hiredis;..\..\Src\Hub\disruptor;X:\E\CodeBases\Cpp\TBB\tbb2017_20161004oss_win\tbb2017_20161004oss\include;X:\E\CodeBases\Network\rapidjson\include;X:\E\CodeBases\Network\Libevent\build\include;X:\E\CodeBases\Network\Libevent\include;X:\E\CodeBases\Network\Libevent\compat;X:\E\CodeBases\Network\Libevent;X:\E\CodeBases\Network\Libevent\.\WIN32-Code;x:\E\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;event.lib;libmysql.lib;hiredis.lib;Win32_Interop.lib;rudeconfig.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\MarketHub\Debug;x:\E\CodeBases\database\redis_win\msvs\Win32\Debug;X:\E\Program Files (x86)\MySQL\MySQL Connector C 6.1\lib;X:\E\CodeBases\Cpp\TBB\tbb2017_20161004oss_win\tbb2017_20161004oss\lib\ia32\vc14;x:\E\CodeBases\Network\Libevent\build\lib\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MARKETHUB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>x:\E\CodeBases\Cpp\rudeconfig-5.0.5\src\;X:\E\Program Files %28x86%29\MySQL\MySQL Connector C 6.1\include;x:\E\CodeBases\database\redis-win-3.0\redis-3.0\deps\hiredis;X:\E\CodeBases\Network\rapidjson\include;x:\E\CodeBases\Cpp\TBB\tbb2017_20161004oss_win\tbb2017_20161004oss\include\;../../Src/Hub/disruptor;X:\E\CodeBases\Network\Libevent\build\include;X:\E\CodeBases\Network\Libevent\include;X:\E\CodeBases\Network\Libevent\compat;X:\E\CodeBases\Network\Libevent;X:\E\CodeBases\Network\Libevent\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>x:\E\CodeBases\Cpp\TBB\tbb2017_20161004oss_win\tbb2017_20161004oss\lib\intel64\vc14\;x:\E\CodeBases\Cpp\rudeconfig-5.0.5\rudeconfig\x64\Debug\;x:\E\Program Files (x86)\Visual Leak Detector\lib\Win64;x:\E\CodeBases\Network\Libevent\build\x64\Debug\;X:\E\Program Files (x86)\MySQL\MySQL Connector C 6.1\lib;X:\E\CodeBases\database\redis_win\msvs\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;event.lib;libmysql.lib;hiredis.lib;Win32_Interop.lib;rudeconfig.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;MARKETHUB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>X:\E\CodeBases\Cpp\rudeconfig-5.0.5\src;X:\E\Program Files %28x86%29\MySQL\MySQL Connector C 6.1\include;x:\E\CodeBases\database\redis-win-3.0\redis-3.0\deps\hiredis;..\..\Src\Hub\disruptor;X:\E\CodeBases\Cpp\TBB\tbb2017_20161004oss_win\tbb2017_20161004oss\include;X:\E\CodeBases\Network\rapidjson\include;X:\E\CodeBases\Network\Libevent\build\include;X:\E\CodeBases\Network\Libevent\include;X:\E\CodeBases\Network\Libevent\compat;X:\E\CodeBases\Network\Libevent;X:\E\CodeBases\Network\Libevent\.\WIN32-Code;x:\E\Program Files (x86)\Visual Leak Detector\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\MarketHub\Release;x:\E\CodeBases\database\redis_win\msvs\Win32\Release;X:\E\Program Files (x86)\MySQL\MySQL Connector C 6.1\lib;X:\E\CodeBases\Cpp\TBB\tbb2017_20161004oss_win\tbb2017_20161004oss\lib\ia32\vc14;x:\E\CodeBases\Network\Libevent\build\lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;event.lib;libmysql.lib;Win32_Interop.lib;hiredis.lib;rudeconfig.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

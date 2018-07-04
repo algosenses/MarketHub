@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="disruptor">
+      <UniqueIdentifier>{b68cbefb-3f64-44f4-9191-5adf7ab8d172}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Src\Hub\Adaptor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\Controller.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\ControllerImpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\EventHub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\Logger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\Runtime.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\Server.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\Cache_Redis.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\Composer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\csv_parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\Cache_Local.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\DataSource_Csv.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\DataSource_MySql.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Src\Hub\TinyCrypt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Src\Hub\Adaptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\ControllerImpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\EventHub.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\EventListener.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\Logger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\Runtime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\blocking_wait_strategy.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\config.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\multi_threaded_claim_strategy.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\ring_buffer.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence_barrier.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence_barrier_group.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\sequence_range.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\single_threaded_claim_strategy.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\spin_wait.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\disruptor\spin_wait_strategy.hpp">
+      <Filter>disruptor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\MarketHub.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\Server.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\Cache_Redis.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\Composer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\csv_parser.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\Cache_Local.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\Export.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\DataSource_Csv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\DataSource_MySql.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Src\Hub\TinyCrypt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
